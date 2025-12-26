@@ -4,11 +4,9 @@
 ![MySQL](https://img.shields.io/badge/MySQL-Relational-blue)
 ![SQL](https://img.shields.io/badge/SQL-3NF%20Design-orange)
 
-NodeCore-CMS, Node.js ve MySQL kullanılarak geliştirilmiş,  
-ilişkisel veritabanı tasarımı ve veri bütünlüğü odaklı bir Content Management System (CMS) projesidir.
+NodeCore-CMS, Node.js ve MySQL kullanılarak geliştirilmiş, ilişkisel veritabanı tasarımı ve veri bütünlüğü odaklı bir Content Management System (CMS) projesidir.
 
-Bu proje, yalnızca bir demo uygulama değil;  
-**gerçek dünyada kullanılabilecek bir CMS backend mimarisini** örneklemek amacıyla tasarlanmıştır.  
+Bu proje, yalnızca bir demo uygulama değil; **gerçek dünyada kullanılabilecek bir CMS backend mimarisini** örneklemek amacıyla tasarlanmıştır.  
 Veritabanı normalizasyonu, SQL kısıtlamaları ve ileri seviye SQL yapıları projenin merkezindedir.
 
 ---
@@ -19,7 +17,7 @@ Bu projede aşağıdaki gereksinimler eksiksiz şekilde sağlanmıştır:
 
 - En az **5 ana tablo + 1 log tablosu**
 - **3NF (Third Normal Form)** uyumlu veritabanı tasarımı
-- PRIMARY KEY, FOREIGN KEY, CHECK, UNIQUE, DEFAULT kısıtlamaları
+- Kısıtlama ayarlamaları
 - 3 adet **VIEW**
 - 3 adet **STORED PROCEDURE**
 - 3 adet **TRANSACTION** örneği
@@ -33,7 +31,7 @@ Bu projede aşağıdaki gereksinimler eksiksiz şekilde sağlanmıştır:
 ## 🛠️ Kullanılan Teknolojiler
 
 - **Node.js**
-- **MySQL** (XAMPP üzerinden)
+- **MySQL (XAMPP üzerinden)**
 - **phpMyAdmin**
 - **mysql2 / promise**
 - **bcrypt / bcryptjs**
@@ -48,24 +46,9 @@ Bu projede aşağıdaki gereksinimler eksiksiz şekilde sağlanmıştır:
 - Kategori sistemi
 - Statik sayfa yönetimi (Hakkımızda, İletişim vb.)
 - Yorum sistemi
-- Veritabanı seviyesinde otomatik loglama (trigger ile)
+- Veritabanı otomatik loglama sistemi
 - 3NF uyumlu, genişletilebilir veri modeli
 - View, Stored Procedure, Transaction ve ileri seviye SQL sorguları
-
----
-
-## 🧱 Veritabanı Tasarımı
-
-Veritabanı mimarisi aşağıdaki prensiplere göre oluşturulmuştur:
-
-- PRIMARY KEY ve AUTO_INCREMENT ile benzersiz kayıt yönetimi
-- FOREIGN KEY kısıtlamaları ile tablo ilişkilerinin DB seviyesinde korunması
-- CHECK, UNIQUE, DEFAULT ve NOT NULL ile veri doğrulama
-- INSERT / UPDATE / DELETE işlemleri için trigger tabanlı loglama
-- View’lar aracılığıyla uygulama katmanına sade ve okunabilir veri sunumu
-
-Tasarım sürecinde veri tekrarından kaçınılmış,  
-update / insert / delete anomaly riskleri minimize edilmiştir.
 
 ---
 
@@ -95,25 +78,23 @@ nodecore-cms-nodejs/
 
 ## Kurulum ve Çalıştırma
 
-1) Bağımlılıkları kur:
-
+1) Kurulum aşaması
 `npm install`
 `.env oluştur: .env.example dosyasını kopyalayarak .env oluştur ve kendi MySQL bilgilerini yaz.`
 
-Veritabanını kur:
+2) Veritabanını kur:
 `phpMyAdmin → SQL sekmesi`
 
-Önce `sql/schema.sql` çalıştır
++ Önce `sql/schema.sql` çalıştır
++ Sonra `sql/examples.sql` çalıştır.
 
-Sonra `sql/examples.sql` çalıştır.
-
-Uygulamayı çalıştır:
+3) Uygulamayı çalıştır:
 
 `node app.js`
 
-### Uygulama: `http://localhost:3000`
+#### Uygulama: `http://localhost:3000`
 
 ## Notlar
 
-+ .env dosyası güvenlik için repo'ya eklenmemiştir.
-+ node_modules/ repo dışında tutulmuştur.
++ `.env` dosyası güvenlik için repo'ya eklenmemiştir.
++ `node_modules/` ayrıca repo dışında tutulmuştur.
