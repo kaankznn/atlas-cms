@@ -41,14 +41,14 @@ Bu projede aşağıdaki gereksinimler eksiksiz şekilde sağlanmıştır:
 
 ## ✨ Özellikler
 
-- Rol tabanlı kullanıcı yönetimi (admin / editor)
-- Yazı (post) yönetimi: ekleme, güncelleme, silme, yayınlama
-- Kategori sistemi
-- Statik sayfa yönetimi (Hakkımızda, İletişim vb.)
-- Yorum sistemi
-- Veritabanı otomatik loglama sistemi
-- 3NF uyumlu, genişletilebilir veri modeli
-- View, Stored Procedure, Transaction ve ileri seviye SQL sorguları
+- **Rol tabanlı kullanıcı yönetimi (admin / editor)**
+- **Yazı (post) yönetimi: ekleme, güncelleme, silme, yayınlama**
+- **Kategori sistemi**
+- **Statik sayfa yönetimi (Hakkımızda, İletişim vb.)**
+- **Yorum sistemi**
+- **Veritabanı otomatik loglama sistemi**
+- **3NF uyumlu, genişletilebilir veri modeli**
+- **View, Stored Procedure, Transaction ve ileri seviye SQL sorguları**
 
 ---
 
