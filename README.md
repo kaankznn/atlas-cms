@@ -79,10 +79,12 @@ nodecore-cms-nodejs/
 ## Kurulum ve Çalıştırma
 
 1) Kurulum aşaması
-`npm install`
-`.env oluştur: .env.example dosyasını kopyalayarak .env oluştur ve kendi MySQL bilgilerini yaz.`
+
++ `npm install`
++ `.env oluştur: .env.example dosyasını kopyalayarak .env oluştur ve kendi MySQL bilgilerini yaz.`
 
 2) Veritabanını kur:
+
 `phpMyAdmin → SQL sekmesi`
 
 + Önce `sql/schema.sql` çalıştır
