@@ -6,9 +6,6 @@
 
 NodeCore-CMS, Node.js ve MySQL kullanılarak geliştirilmiş, ilişkisel veritabanı tasarımı ve veri bütünlüğü odaklı bir Content Management System (CMS) projesidir.
 
-Bu proje, yalnızca bir demo uygulama değil; **gerçek dünyada kullanılabilecek bir CMS backend mimarisini** örneklemek amacıyla tasarlanmıştır.  
-Veritabanı normalizasyonu, SQL kısıtlamaları ve ileri seviye SQL yapıları projenin merkezindedir.
-
 ---
 
 ## 📌 Genel Bakış
@@ -77,19 +74,19 @@ nodecore-cms-nodejs/
 
 ## Kurulum ve Çalıştırma
 
-1) Kurulum aşaması
+1) **Hazırlık:**
 
 + `npm install`
-+ `.env` oluştur: .env.example dosyasını kopyalayarak .env oluştur ve kendi MySQL bilgilerini yaz.
++ `.env` oluştur: `.env.example` dosyasını kopyalayarak `.env` oluştur ve kendi `MySQL` bilgilerini yaz.
 
-2) Veritabanını kur:
+2) **Veritabanını kur:**
 
 `phpMyAdmin → SQL sekmesi`
 
 + Önce `sql/schema.sql` çalıştır
 + Sonra `sql/examples.sql` çalıştır.
 
-3) Uygulamayı çalıştır:
+3) **Uygulamayı çalıştır:**
 
 `node app.js`
 
@@ -99,3 +96,5 @@ nodecore-cms-nodejs/
 
 + `.env` dosyası güvenlik için repo'ya eklenmemiştir.
 + `node_modules/` ayrıca repo dışında tutulmuştur.
+
+**Teşekkürler!**
