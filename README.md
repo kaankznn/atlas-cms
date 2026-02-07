@@ -4,11 +4,11 @@
 ![MySQL](https://img.shields.io/badge/MySQL-Relational-blue)
 ![SQL](https://img.shields.io/badge/SQL-3NF%20Design-orange)
 
-NodeCore-CMS, Node.js ve MySQL kullanılarak geliştirilmiş, ilişkisel veritabanı tasarımı ve veri bütünlüğü odaklı bir Content Management System (CMS) projesidir.
+Atlas-CMS is a Content Management System (CMS) project developed using Node.js and MySQL, focusing on relational database design and data integrity.
 
-**Mevcut sürüm:** `v1.1`
+**Current Version:** `v1.1`
 
-## 🛠️ Kullanılan Teknolojiler
+## 🛠️ Technologies
 
 - **Node.js**
 - **MySQL (XAMPP)**
@@ -19,19 +19,19 @@ NodeCore-CMS, Node.js ve MySQL kullanılarak geliştirilmiş, ilişkisel veritab
 
 ---
 
-## 📑 Özellikler
+## 📑 Features
 
-- Rol tabanlı kullanıcı yönetimi (admin / editor)
-- Yazı (post) yönetimi: ekleme, güncelleme, silme, yayınlama
-- Kategori sistemi
-- Statik sayfa yönetimi
-- Yorum sistemi
-- Veritabanı otomatik loglama sistemi
-- View, Stored Procedure, Transaction ve SQL sorguları
+- Role-based user management (admin/editor)
+- Post management: adding, updating, deleting, publishing
+- Category system
+- Static page management
+- Comment system
+- Automatic database logging system
+- View, Stored Procedure, Transaction, and SQL queries
 
 ---
 
-## 📁 Proje Yapısı
+## 📁 Project Structure
 
 ```
 nodecore-cms-nodejs/
@@ -55,29 +55,29 @@ nodecore-cms-nodejs/
 └─ README.md
 ```
 
-## Kurulum ve Çalıştırma
+## Installation and Usage
 
-1) **Hazırlık:**
+1) **Preparation:**
 
 + `npm install`
-+ `.env` oluştur: `.env.example` dosyasını kopyalayarak `.env` oluştur ve kendi `MySQL` bilgilerini yaz.
++ Create `.env`: By copying `.env.example` create `.env` and type your `MySQL` informations.
 
-2) **Veritabanını kur:**
+2) **Setting-Up Database:**
 
-`phpMyAdmin → SQL sekmesi`
+`phpMyAdmin → SQL tab`
 
-+ Önce `sql/schema.sql` çalıştır
-+ Sonra `sql/examples.sql` çalıştır.
++ First, run `sql/schema.sql` file.
++ Then run `sql/examples.sql` file.
 
-3) **Uygulamayı çalıştır:**
+3) **Run the application:**
 
 `node app.js`
 
-`Uygulama`: `http://localhost:3000`
+`Application`: `http://localhost:3000`
 
-## Notlar
+## Notes
 
-+ `.env` dosyası güvenlik için repo'ya eklenmemiştir.
-+ `node_modules/` ayrıca repo dışında tutulmuştur.
++ `.env` file has been added to repo for security.
++ However, `node_modules/` has been kept out of repo.
 
-**Teşekkürler!**
+**Thank you!**
