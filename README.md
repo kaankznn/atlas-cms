@@ -4,7 +4,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-Relational-blue)
 ![SQL](https://img.shields.io/badge/SQL-3NF%20Design-orange)
 
-Atlas-CMS is a Content Management System (CMS) project developed using Node.js and MySQL, focusing on relational database design and data integrity.
+Atlas-CMS is a Content Management System (CMS) developed using Node.js and MySQL, with a strong focus on relational database design, data integrity, and secure backend practices.
 
 **Current Version:** `v1.1`
 
@@ -77,7 +77,7 @@ nodecore-cms-nodejs/
 
 ## Notes
 
-+ `.env` file has been added to repo for security.
-+ However, `node_modules/` has been kept out of repo.
++ `.env` file is excluded from the repository for security reasons.
++ However, `node_modules/` is intentionally kept out of the repository.
 
 **Thank you!**
